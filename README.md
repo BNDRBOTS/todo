@@ -1,32 +1,29 @@
-# **BNDR. Task Architecture | Forensic Edition**
+# **BNDR | ToDo**
+
+A single-file, browser-based task management system designed for reliability and local data control.
 
 ## **Overview**
 
-A high-fidelity, dual-mode task management interface designed for forensic-grade precision. This system adheres to strict technical minimalism, ensuring stability across all viewports, including mobile devices that historically trigger rendering anomalies.
+This system provides two independent lists—"Active Queue" and "Resolved"—to track daily objectives. It is built as a self-contained application requiring no external dependencies, databases, or cloud accounts.
 
-## **Technical Directives**
+## **Core Capabilities**
 
-* **Zero-Zoom Architecture:** Input fields are hard-locked to 16px font-size to prevent iOS Safari auto-zoom fractures.  
-* **Tactile Compliance:** Interactive targets (checkboxes, icons) are scaled to meet 44px+ physical tap-area requirements on mobile viewports.  
-* **Forensic Aesthetics:** A dual-axis design language balancing "Technical Minimalism" (Light) and "Industrial Brutalism" (Dark).  
-* **Persistent State:** Client-side orchestration via `localStorage` with native Import/Export capabilities for cross-device data continuity.
+* **Task Lifecycle Management:** Add, edit, mark as complete, or remove tasks.  
+* **Persistent Local State:** Data is saved to the browser’s `localStorage`.  
+* **Portable Data:** Export your entire task list as a JSON file and import it on another device to maintain continuity.  
+* **Responsive Architecture:** The interface scales across desktops and mobile devices with a layout optimized for touch interaction.  
+* **Visual Modes:** Toggle between light and dark modes to suit your environment.
 
-## **Forensic Toolset**
+  ## **Technical Stuff**
 
-* **Task Lifecycle:** CRUD-based task execution with sub-second transition latency.  
-* **State Injection:** Import/Export JSON payloads to maintain repository integrity.  
-* **Adaptive Tactile Engine:** A 3D perspective-transformed UI layer providing visual feedback during user interactions.  
-* **Night-Mode Overrides:** Clinical dark-lux interface supporting high-contrast, low-glare visibility.
+* **Zero Deps:** Built w/ standard HTML, CSS, \+ Vanilla JavaScript.  
+* **Tactile Design:** Interactive elements are sized for reliable use on touchscreens.  
+* **Input Integrity:** Text fields are locked to a base font size to prevent layout breakage on mobile browsers.  
+* **Data Portability:** Full support for manual state backup and restoration via JSON payloads.
 
-## **Implementation Details**
+  ## **Deployment**
 
-* **Rendering Model:** Vanilla JavaScript/CSS engine. No external framework dependencies.  
-* **Compliance:** Validated against cross-browser rendering standards.  
-* **Integrity:** Zero-clutter, high-fidelity UI assets designed for premium, industrial-grade software environments.
-
-## **Deployment**
-
-1. Open the source file in any modern browser.  
-2. Initialize tasks via the "Active Queue".  
-3. Use the "Export Data" functionality for backups.  
-4. Toggle "Night" mode for industrial-grade viewing.
+1. Open the source file in any modern web browser.  
+2. Enter tasks in the "Active Queue" and click "Execute."  
+3. Use the toolbar buttons to export your current state or import a saved backup.  
+4. Toggle "Night" mode for high-contrast, low-glare visibility.
